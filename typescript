@@ -1,0 +1,47 @@
+Script started on Sun 08 Nov 2020 09:36:22 AM UTC
+[?1034h[01;32mvocstartsoft[00m:[01;34m~/environment/hw-sinatra-saas-hangperson[00m (master) $ bundle exec autotest
+(Not running features.  To run features in autotest, set AUTOFEATURE=true.)
+loading autotest/rspec
+"/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby" -rrubygems -S "/home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rspec-core-3.3.2/exe/rspec" --tty "/home/ec2-user/environment/hw-sinatra-saas-hangperson/spec/hangperson_game_spec.rb"
+Run options: exclude {:pending=>true}
+
+HangpersonGame
+  new
+[32m    takes a parameter and returns a HangpersonGame object[0m
+  guessing
+    correctly
+[32m      changes correct guess list[0m
+[32m      returns true[0m
+    incorrectly
+[32m      changes wrong guess list[0m
+[32m      returns true[0m
+    same letter repeatedly
+[32m      does not change correct guess list[0m
+[32m      does not change wrong guess list[0m
+[32m      returns false[0m
+[32m      is case insensitive[0m
+    invalid
+your alphabet is empty, make a right guess.
+[32m      throws an error when empty[0m
+guess should be in alphabet!
+[32m      throws an error when not a letter[0m
+there's no guess... make a guess!
+[32m      throws an error when nil[0m
+  displayed word with guesses
+[32m    should be 'b-n-n-' when guesses are 'bn'[0m
+[32m    should be '------' when guesses are 'def'[0m
+[32m    should be 'banana' when guesses are 'ban'[0m
+  game status
+[32m    should be win when all letters guessed[0m
+[32m    should be lose after 7 incorrect guesses[0m
+[32m    should continue play if neither win nor lose[0m
+
+Finished in 0.03686 seconds (files took 0.43476 seconds to load)
+[32m18 examples, 0 failures[0m
+
+^CInterrupt a second time to quit
+^C
+[01;32mvocstartsoft[00m:[01;34m~/environment/hw-sinatra-saas-hangperson[00m (master) $ exit
+exit
+
+Script done on Sun 08 Nov 2020 09:36:36 AM UTC
